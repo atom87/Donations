@@ -1,0 +1,19 @@
+
+    <div class="row">
+        <div class="col-5">
+            <div>
+<don-pagination [totalItems]="count" [pageSize]="params.pageSize"
+(onPageSelected)="changePage($event)"></don-pagination>
+            </div>
+
+            <div>
+                <don-search-form></don-search-form>
+            </div>
+        </div>
+  
+        <div class="col-7">
+            <don-table [donations]="donationsList"></don-table>
+        </div>
+    </div>
+
+
